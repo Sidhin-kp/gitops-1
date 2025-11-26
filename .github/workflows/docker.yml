@@ -30,7 +30,7 @@ jobs:
       - name: Checkout GitOps repo
         uses: actions/checkout@v4
         with:
-          repository: <your-org>/<gitops-repo>
+          repository: Sidhin-kp/gitops-2
           token: ${{ secrets.GITOPS_PAT }}
           path: gitops-repo
 
