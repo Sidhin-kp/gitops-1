@@ -44,7 +44,7 @@ Clone both repositories before starting.
 
 
 
-* CI — GitHub Actions
+CI — GitHub Actions
 
 * Build Node.js application
 
