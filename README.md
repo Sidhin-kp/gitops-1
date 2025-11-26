@@ -1,4 +1,5 @@
-GitOps CI/CD with GitHub Actions + Argo CD
+GitOps CI/CD with GitHub Actions + Argo CD    
+
 
 
 🚀 Project Overview
