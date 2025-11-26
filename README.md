@@ -1,6 +1,6 @@
 GitOps CI/CD with GitHub Actions + Argo CD    
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Project Overview
 
@@ -12,7 +12,7 @@ Argo CD for Continuous Deployment (CD)
 
 Kubernetes (Kind or any cluster) for application hosting
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 Two Git repositories:
 
@@ -25,7 +25,7 @@ gitops-2 → Kubernetes manifests + Argo CD application definition (GitOps repo)
 
 Argo CD continuously watches the GitOps repository and automatically synchronizes any changes (such as updated Docker image tags) into the Kubernetes cluster.
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 📂 Repositories
 
@@ -37,7 +37,7 @@ Kubernetes Manifests + Argo CD Config (CD)	https://github.com/Sidhin-kp/gitops-2
 
 Clone both repositories before starting.
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 
 🔄 CI/CD Workflow Summary
@@ -68,7 +68,7 @@ CD — Argo CD
 
 * Continuously reconciles cluster with GitHub source of truth
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🛠 Prerequisites
 
@@ -128,7 +128,7 @@ Install Argo CD:
 
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🎛 4. Access Argo CD UI
 
@@ -153,7 +153,7 @@ Open:
 
 https://localhost:8080
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 📦 5. Deploy the Argo CD Application
 
@@ -164,7 +164,7 @@ $ kubectl apply -f argocd/application.yaml -n argocd
 This tells Argo CD to watch the GitOps repo and apply changes automatically.
 
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🔐 6. Configure GitHub Secrets for CI Pipeline
 
@@ -194,7 +194,7 @@ These allow the CI pipeline to:
 * Update Kubernetes manifest in gitops-2 repo
 
   
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🌍 7. Access the Application (Local Port-Forward)
 
@@ -206,7 +206,7 @@ Open the app:
 
 http://localhost:8080
 
-
+------------------------------------------------------------------------------------------------------------------------------
 
 🎉 GitOps Workflow is Ready
 
