@@ -199,12 +199,12 @@ These allow the CI pipeline to:
 🌍 7. Access the Application (Local Port-Forward)
 
 
-$ kubectl port-forward svc/nodejs-app-service 8080:80
+$ kubectl port-forward svc/nodejs-app-service 8081:80
 
 
 Open the app:
 
-http://localhost:8080
+http://localhost:8081
 
 ------------------------------------------------------------------------------------------------------------------------------
 
